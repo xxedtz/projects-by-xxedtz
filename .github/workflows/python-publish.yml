@@ -1,0 +1,25 @@
+gerador de senhas semi-automatico:
+
+import random
+
+print('bem vindo ao seu gerador de senhas')
+
+chars = 'abcdefghijklmnoprstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%&+?0123456789'
+
+number = input('Quantidade de senhas para ser criado: ')
+number = int(number)
+
+lenght = input('Coloque a quantidade de caractéres a ser criado:')
+lenght = int(lenght)
+
+print('\naqui está suas senhas geradas aleatoriamente:')
+
+for pwd in range(number):
+  passwords = ''
+  for c in range(lenght):
+    passwords += random.choice(chars)
+  print(passwords)
+
+
+======================
+use com moderação, como dito no perfil sou iniciante então esse é um dos meus primeiros projetos com python.
